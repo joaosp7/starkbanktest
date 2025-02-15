@@ -1,0 +1,27 @@
+{
+  "name": "starkBank",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "yarn tsx src/index.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.2",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.9",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "starkbank": "^2.29.1",
+    "zod": "^3.24.2"
+  }
+}
