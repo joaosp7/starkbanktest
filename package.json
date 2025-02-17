@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start:dev": "yarn tsx src/index.ts"
+    "start:dev": "yarn tsx src/index.ts",
+    "build": "tsc --build",
+    "start": "npm build && node ./dist/index.js"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",

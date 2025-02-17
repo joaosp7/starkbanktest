@@ -1,0 +1,7 @@
+runtime: nodejs22
+entrypoint: node dist/index.js
+runtime_config:
+  operating_system: "ubuntu22"
+handlers:
+  - url: /.*
+    script: auto
