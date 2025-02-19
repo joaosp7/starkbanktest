@@ -1,0 +1,13 @@
+cron:
+  - description: "start application"
+    url: /check
+    schedule: every 70 minutes
+    retry_parameters:
+      job_retry_limit: 3
+      min_backoff_seconds: 2
+  - description: "register invoice"
+    url: /invoice
+    schedule: every 3 hours
+    retry_parameters:
+      job_retry_limit: 5
+      min_backoff_seconds: 10
